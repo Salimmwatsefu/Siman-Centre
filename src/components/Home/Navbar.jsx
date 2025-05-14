@@ -1,42 +1,47 @@
 import React from 'react';
-// Import Link from react-router-dom
 import { Link } from 'react-router-dom';
-import logo from '../../assets/logo1.png';
+import MobileNav from './MobileNav'; 
+import logo from '../../assets/logo1.png'; 
 
 const Navbar = () => {
   return (
     <nav className="bg-white shadow-md border-b border-dark-green/20">
-      <div className="container mx-auto px-4 md:px-6  flex justify-between items-center">
-       
+      <div className="container mx-auto px-4 md:px-6 flex justify-between items-center py-4">
+        {/* Logo and Brand */}
         <div className="flex items-center">
-          <img src={logo} alt="MSU Logo" className="h-14 mr-2 mt-5" />
+          <Link to="/">
+            <img src={logo} alt="My Soul’s Universe Logo" className="h-14 mr-2" />
+          </Link>
           <span className="md:text-xl text-lg font-bold text-gray-800">MySoulsUniverse</span>
         </div>
 
-        
+        {/* Desktop Links and Mobile Nav */}
         <div className="flex items-center">
-          
-          <div className="hidden md:flex items-center space-x-6 mr-14"> 
-            {/* Use Link component for navigation */}
-            <Link to="/" className="text-gray-800 hover:text-gray-800 flex items-center">
+          {/* Desktop Links (Hidden on Mobile) */}
+          <div className="hidden md:flex items-center space-x-6 mr-14">
+            <Link to="/" className="text-dark-green hover:text-gold transition-colors">
               Home
             </Link>
-            <Link to="/about" className="text-gray-800 hover:text-gray-800 flex items-center">
+            <Link to="/about" className="text-dark-green hover:text-gold transition-colors">
               About
             </Link>
-            <Link to="/services" className="text-gray-800 hover:text-gray-800 flex items-center">
+            <Link to="/services" className="text-dark-green hover:text-gold transition-colors">
               Services
             </Link>
-            <Link to="/contacts" className="text-gray-800 hover:text-gray-800 flex items-center"> {/* Corrected path to /contacts */}
+            <Link to="/contacts" className="text-dark-green hover:text-gold transition-colors">
               Contacts
             </Link>
           </div>
 
-          <Link to="/contacts">
-          <button className="bg-sage-green hover:bg-teal-700 text-dark-green font-semibold py-2 md:px-4 px-2 rounded cursor-pointer">
-            Get Started
-          </button>
+          {/* Get Started Button (Desktop) */}
+          <Link to="/contacts" className="hidden md:block">
+            <button className="bg-sage-green hover:bg-dark-green text-dark-green hover:text-white font-semibold py-2 px-4 rounded cursor-pointer transition-colors">
+              Get Started
+            </button>
           </Link>
+
+          {/* Mobile Nav (Visible on Mobile) */}
+          <MobileNav />
         </div>
       </div>
     </nav>

@@ -64,7 +64,7 @@ const AboutSection1 = () => {
                 <div>
                   <h3 className=" text-lg font-semibold text-dark-green mb-2">Mission</h3>
                   <p className="text-gray-600">
-                    To empower individuals and organizations thrive through expert training, customized coaching, and mentorship focused on results. Through holistic approach that nurtured both the mind and heart, we integrate psychosocial support to foster emotional wellbeing, resilience and meaningful transformation
+                    To empower individuals and organizations thrive through expert training, customized coaching, and mentorship focused on results. Through holistic approach that nurtures both the mind and heart, we integrate psychosocial support to foster emotional wellbeing, resilience and meaningful transformation
                   </p>
                 </div>
               </div>

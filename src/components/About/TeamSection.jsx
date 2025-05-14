@@ -32,7 +32,8 @@ const TeamSection = () => {
                   <h3 className="text-2xl font-bold text-dark-green mb-1">Nelius Mueni - <span className=' text-xl text-olive-green'>Founder</span></h3>
                   <div className="inline-flex flex-wrap gap-2">
                     <span className="px-3 py-1 bg-gold/10 text-gold rounded-full text-sm">Psychologist</span>
-                    <span className="px-3 py-1 bg-gold/10 text-gold rounded-full text-sm">HR Specialist</span>
+                    <span className="px-3 py-1 bg-gold/10 text-gold rounded-full text-sm">HR Professional</span>
+                    <span className="px-3 py-1 bg-gold/10 text-gold rounded-full text-sm">Trainer</span>
                     <span className="px-3 py-1 bg-gold/10 text-gold rounded-full text-sm">Wellness Advocate</span>
                   </div>
                 </div>
