@@ -10,7 +10,7 @@ const Navbar = () => {
        
         <div className="flex items-center">
           <img src={logo} alt="MSU Logo" className="h-14 mr-2 mt-5" />
-          <span className="text-xl font-bold text-gray-800">MySoulsUniverse</span>
+          <span className="md:text-xl text-lg font-bold text-gray-800">MySoulsUniverse</span>
         </div>
 
         
@@ -32,10 +32,11 @@ const Navbar = () => {
             </Link>
           </div>
 
-          
-          <button className="bg-sage-green hover:bg-teal-700 text-dark-green font-semibold py-2 px-4 rounded">
-            Get support
+          <Link to="/contacts">
+          <button className="bg-sage-green hover:bg-teal-700 text-dark-green font-semibold py-2 md:px-4 px-2 rounded cursor-pointer">
+            Get Started
           </button>
+          </Link>
         </div>
       </div>
     </nav>

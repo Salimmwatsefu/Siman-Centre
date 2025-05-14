@@ -19,12 +19,12 @@ const AboutSection1 = () => {
             <img 
               src={about1}
               alt="Diverse team collaboration" 
-              className="rounded-xl w-full h-auto object-cover shadow-xl" 
+              className="rounded-xl w-full h-auto object-cover shadow-xl mt-28" 
               style={{ maxHeight: '500px' }}
             />
             
             {/* Decorative elements */}
-            <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-secondary rounded-xl -z-10"></div>
+            <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-goldenrod rounded-xl -z-10"></div>
             <div className="absolute -top-6 -right-6 w-32 h-32 border-4 border-primary rounded-xl -z-10"></div>
           </div>
         </div>
@@ -64,10 +64,7 @@ const AboutSection1 = () => {
                 <div>
                   <h3 className=" text-lg font-semibold text-dark-green mb-2">Mission</h3>
                   <p className="text-gray-600">
-                    At My Soul's Universe, we empower individuals and organizations by providing expert training, 
-                    personalized coaching, and mentoring to help them achieve their personal and professional goals.
-                    Through a holistic approach that nurtures both the mind and heart, we integrate psychosocial 
-                    support to foster emotional well-being, resilience, and meaningful transformation.
+                    To empower individuals and organizations thrive through expert training, customized coaching, and mentorship focused on results. Through holistic approach that nurtured both the mind and heart, we integrate psychosocial support to foster emotional wellbeing, resilience and meaningful transformation
                   </p>
                 </div>
               </div>

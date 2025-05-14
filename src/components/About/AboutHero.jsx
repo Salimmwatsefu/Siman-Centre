@@ -4,8 +4,14 @@ import video1 from '../../assets/video1.mp4';
 function AboutHero() {
   return (
     <div className='bg-bg  pb-20'>
-      <div className='flex mx-20 pt-24 gap-20 pl-5'>
-        <div className='mt-16 max-w-[580px]'>
+
+      <div className="absolute top-36 left-0 w-32 h-32 bg-dark-green/10 rounded-full transform -translate-x-1/2 -translate-y-1/2" />
+
+      
+      <div className='md:flex md:mx-20 mx-5 md:pt-24 pt-5 gap-20 md:pl-5'>
+        
+        
+        <div className='mt-16 md:max-w-[580px]'>
           <h1 className='text-6xl text-dark-green '>About Us</h1>
           <p className=' mt-10 text-gray-600'>At My Soul’s Universe, we are dedicated to empowering individuals and organizations on their
 journey to personal and professional growth. Our holistic approach blends expert training,
@@ -17,7 +23,7 @@ Whether you're seeking professional advancement, personal transformation, or a s
 of purpose, My Soul’s Universe is here to guide you. Together, we create a path toward growth,
 fulfillment, and lasting success.</p>
         </div>
-        <div className='w-[500px]  bg-[#E2EDE3] flex justify-center rounded-2xl'>
+        <div className='md:w-[500px]  bg-[#E2EDE3] flex justify-center rounded-2xl mt-20 md:mt-0'>
           <div>
             <video
               src={video1}

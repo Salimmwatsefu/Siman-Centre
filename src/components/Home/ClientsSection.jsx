@@ -14,7 +14,7 @@ const clients = [
 function ClientsSection() {
   return (
     <div className="pt-20 bg-bg py-16">
-      <div className="ml-16">
+      <div className="md:ml-16  ml-5">
         {/* Heading */}
         <h1 className="px-4 py-2 border-2 border-dark-green w-fit text-dark-green rounded-3xl uppercase text-sm">
           Our Clients

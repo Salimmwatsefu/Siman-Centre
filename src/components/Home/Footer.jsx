@@ -8,12 +8,10 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const footerNavLinks = [
-    { name: 'Home', target: 'hero' },
+    { name: 'Home', target: '/' },
     { name: 'About', target: 'about' },
     { name: 'Services', target: 'services' },
-    { name: 'Values', target: 'values' },
-    { name: 'Clients', target: 'clients' },
-    { name: 'Contact', target: 'contact' },
+    { name: 'Contact', target: 'contacts' },
   ];
 
   return (
@@ -30,7 +28,7 @@ const Footer = () => {
               />
               <span className="text-xl font-serif font-semibold">My Soul's Universe</span>
             </div>
-            <p className="text-gray-700 mt-4 ml-4">
+            <p className="text-gray-700 mt-4 md:ml-4 ml-2">
               Empowering individuals and organizations on their journey to personal and professional growth.
             </p>
             <div className="flex space-x-4 pt-4 ml-4 text-gray-600 ">
@@ -51,8 +49,8 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-xl font-serif font-semibold mb-6 ml-10">Quick Links</h3>
-            <ul className="space-y-3 ml-16">
+            <h3 className="text-xl font-serif font-semibold mb-6 md:ml-10 ml-2">Quick Links</h3>
+            <ul className="space-y-3 md:ml-16 ml-2 flex md:block gap-5">
               {footerNavLinks.map((link) => (
                 <li key={link.name}>
                   <Link
@@ -73,7 +71,7 @@ const Footer = () => {
           {/* Services */}
           <div>
             <h3 className="text-xl font-serif font-semibold mb-6">Our Services</h3>
-            <ul className="space-y-3">
+            <ul className="space-y-3 flex flex-wrap md:block gap-5">
               <li className="text-gray-500 hover:text-gray-300 transition-colors">Professional Training</li>
               <li className="text-gray-500 hover:text-gray-300 transition-colors">Personalized Coaching</li>
               <li className="text-gray-500 hover:text-gray-300 transition-colors">Mentoring Programs</li>
@@ -96,8 +94,8 @@ const Footer = () => {
                 <div className="text-secondary">
                   <FiMail size={18} />
                 </div>
-                <a href="mailto:mysoulsuniverse@gmail.com" className="text-gray-500 hover:text-secondary transition-colors">
-                  mysoulsuniverse@gmail.com
+                <a href="mailto:info@mysoulsuniverse.com" className="text-gray-500 hover:text-secondary transition-colors">
+                  info@mysoulsuniverse.com
                 </a>
               </li>
               <li className="flex items-center space-x-3">

@@ -17,17 +17,17 @@ function Section2() {
         className='absolute top-0  -right-[400px] w-[700px] opacity-[15%] pointer-events-none select-none' // Subtle, non-interactive
       />
       
-      <div className='ml-16'>
-        <div className='pt-28 pb-10'>
+      <div className='md:ml-16 ml-5'>
+        <div className='md:pt-28 pt-16 pb-10'>
           <h1 className='px-4 py-2 border-2 border-goldenrod w-fit text-goldenrod rounded-3xl uppercase text-sm'>
             Why My Soul’s Universe ?
           </h1>
-          <p className='text-bg text-6xl/snug font-light mt-14'>
+          <p className='text-bg md:text-6xl/snug text-4xl/snug font-light mt-14'>
             Learn how we can <br /> help you grow.
           </p>
         </div>
 
-        <div className='mt-10 flex gap-8'> {/* Added gap for better spacing */}
+        <div className='mt-10 md:flex  gap-8'> {/* Added gap for better spacing */}
           <div>
             <img
               src={holistic}

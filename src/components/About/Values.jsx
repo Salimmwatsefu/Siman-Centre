@@ -56,7 +56,7 @@ const Values = () => {
   ];
 
   return (
-    <Section id="values" bgColor="bg-dark-green">
+    <Section id="values" bgColor="bg-dark-green" className=' pb-20'>
       <h1 className=' text-goldenrod text-center font-medium uppercase pt-20'>Core Values</h1>
       <h2 className=' text-center pt-5 text-4xl text-gray-200 font-semibold'>The Principles That Guide Us</h2>
 
@@ -100,8 +100,8 @@ const Values = () => {
           transition={{ duration: 0.8, delay: 0.5 }}
           className="inline-block"
         >
-          <div className="h-24 w-24 rounded-full bg-secondary/20 backdrop-blur-sm p-6 mx-auto">
-            <div className="h-full w-full rounded-full border-2 border-dashed border-secondary animate-spin-slow"></div>
+          <div className="h-24 w-24 rounded-full bg-forest-green backdrop-blur-sm p-6 mx-auto">
+            <div className="h-full w-full rounded-full border-2 border-dashed border-goldenrod animate-spin-slow"></div>
           </div>
         </motion.div>
         <motion.p
