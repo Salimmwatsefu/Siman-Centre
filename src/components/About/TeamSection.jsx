@@ -177,7 +177,7 @@ const TeamSection = () => {
                 <div className="flex flex-col space-y-2 text-dark-green">
                   <p className="font-medium">Sector Expertise:</p>
                   <div className="flex flex-wrap gap-2">
-                    {['Service', 'Humanitarian', 'Financial', 'Manufacturing'].map((sector) => (
+                    {['Stakeholder Engagement', 'Media Relations', 'Corporate Communication','Advocacy'].map((sector) => (
                       <span key={sector} className="px-3 py-1 bg-dark-green/5 rounded-full text-sm">
                         {sector}
                       </span>
