@@ -32,16 +32,16 @@ const Footer = () => {
               Empowering individuals and organizations on their journey to personal and professional growth.
             </p>
             <div className="flex space-x-4 pt-4 ml-4 text-gray-600 ">
-              <a href="#" className=" hover:text-gray-300  transition-colors">
+              <a href="" className=" hover:text-gray-300  transition-colors">
                 <FiFacebook size={20} />
               </a>
-              <a href="#" className=" hover:text-gray-300  transition-colors">
+              <a href="https://www.instagram.com/mysoulsuniverse/" className=" hover:text-gray-300  transition-colors">
                 <FiInstagram size={20} />
               </a>
               <a href="#" className=" hover:text-gray-300 transition-colors">
                 <FiLinkedin size={20} />
               </a>
-              <a href="#" className=" hover:text-gray-300 transition-colors">
+              <a href="https://x.com/mysoulsuniverse" className=" hover:text-gray-300 transition-colors">
                 <FiTwitter size={20} />
               </a>
             </div>
@@ -88,7 +88,7 @@ const Footer = () => {
                 <div className="mt-1 text-secondary">
                   <FiMapPin size={18} />
                 </div>
-                <span className="text-gray-500">2nd Floor, Room 2 Mbandu Complex, Karen</span>
+                <span className="text-gray-500">2nd Floor, Mbandu Complex, Karen</span>
               </li>
               <li className="flex items-center space-x-3">
                 <div className="text-secondary">
