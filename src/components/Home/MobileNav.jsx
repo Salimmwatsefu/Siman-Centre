@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FiMenu, FiX } from 'react-icons/fi';
-import logo from '../../assets/logo1.png'; // Adjust path based on your folder structure
+import logo from '../../assets/newLogoFull.png'; // Adjust path based on your folder structure
 
 const MobileNav = () => {
   const [isOpen, setIsOpen] = useState(false);

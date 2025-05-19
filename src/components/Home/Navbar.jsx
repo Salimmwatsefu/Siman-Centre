@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import MobileNav from './MobileNav'; 
-import logo from '../../assets/logo1.png'; 
+import logo from '../../assets/newLogoFull.png'; 
 
 const Navbar = () => {
   return (
@@ -10,7 +10,7 @@ const Navbar = () => {
         {/* Logo and Brand */}
         <div className="flex items-center">
           <Link to="/">
-            <img src={logo} alt="My Soul’s Universe Logo" className="h-14 mr-2" />
+            <img src={logo} alt="My Soul’s Universe Logo" className="h-16 mr-2" />
           </Link>
           <span className="md:text-xl text-lg font-bold text-gray-800">MySoulsUniverse</span>
         </div>
