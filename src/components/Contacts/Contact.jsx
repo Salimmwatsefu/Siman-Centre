@@ -86,7 +86,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-bold mb-1">Location</h4>
-                  <p className="text-gray-600">2nd Floor, Room 2 Mbandu Complex, Karen</p>
+                  <p className="text-gray-600">2nd Floor, Mbandu Complex, Karen</p>
                 </div>
               </div>
               

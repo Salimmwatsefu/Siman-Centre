@@ -188,6 +188,59 @@ const TeamSection = () => {
             </div>
           </div>
         </div>
+
+        {/* Team Section */}
+        <div className="mb-16 mt-20 relative">
+          <h2 className="text-4xl font-bold text-dark-green mb-4 text-center font-serif relative z-10">
+            Our Team
+            <span className="block mt-2 text-2xl font-sans font-medium text-dark-green/50">Driving Innovation Together</span>
+          </h2>
+          
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {/* Software Engineer Card */}
+          <div className="relative group transform hover:-translate-y-2 transition-all duration-500">
+            <div className="absolute inset-0 bg-pale-green rounded-3xl transform rotate-1 group-hover:rotate-2 transition-all duration-500" />
+            <div className="relative bg-white p-8 rounded-3xl shadow-2xl border-l-4 border-pale-green">
+              <div className="flex items-start mb-8">
+                <div className="relative">
+                  <div className="w-20 h-20 bg-pale-green rounded-2xl flex items-center justify-center text-dark-green text-3xl font-bold shadow-lg">
+                    SM
+                  </div>
+                </div>
+                <div className="ml-6 flex-1">
+                  <h3 className="text-2xl font-bold text-dark-green mb-1">Salim Mwatsefu - <span className="text-xl text-olive-green">Software Engineer</span></h3>
+                  <div className="inline-flex flex-wrap gap-2">
+                    <span className="px-3 py-1 bg-dark-green/10 text-dark-green rounded-full text-sm">Digital Strategist</span>
+                    <span className="px-3 py-1 bg-dark-green/10 text-dark-green rounded-full text-sm">Fullstack Developer</span>
+                    <span className="px-3 py-1 bg-dark-green/10 text-dark-green rounded-full text-sm">IT Operations</span>
+                  </div>
+                </div>
+              </div>
+              <div className="space-y-4 text-gray-700 mb-8">
+  <p className="border-l-2 border-pale-green pl-4 italic">"Powering digital innovation from vision to execution"</p>
+  <p className="text-gray-700 mt-2">
+    As the Software Engineer at My Soul’s Universe, Salim drives the organization’s technological foundation, seamlessly blending frontend and backend expertise. He designs and delivers dynamic digital solutions that embody the organization’s mission of empowerment and growth.
+  </p>
+  <p className="text-gray-700 mt-2">
+    Overseeing all IT operations, Salim ensures robust, secure, and scalable infrastructure, enabling My Soul’s Universe to thrive in a digital-first world. 
+  </p>
+</div>
+<div className="bg-pale-green/5 p-6 rounded-xl">
+  <h4 className="text-dark-green font-bold mb-3">Technical Expertise</h4>
+  <div className="grid grid-cols-2 gap-3">
+    {['Frontend Development', 'Backend Systems', 'IT Operations', 'Digital Strategy'].map((item) => (
+      <div key={item} className="flex items-center">
+        <div className="w-1.5 h-1.5 bg-pale-green rounded-full mr-2" />
+        <span className="text-dark-green/90 text-sm">{item}</span>
+      </div>
+    ))}
+  </div>
+</div>
+            </div>
+          </div>
+          </div>
       </div>
     </section>
   );
