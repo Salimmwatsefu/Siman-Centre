@@ -9,12 +9,14 @@ import Footer from './components/Home/Footer'
 import Contact from './components/Contacts/Contact'
 import Services from './components/Services/Services'
 import ServicesHome from './components/Services/ServicesHome'
+import LinkAnnouncement from './components/Home/LinkAnnouncement'
 
 function App() {
  
 
   return (
     <div>
+      <LinkAnnouncement />
 
       <Navbar />
       

@@ -6,7 +6,7 @@ function Hero() {
   return (
     <div className=' bg-bg pb-10'>
         <div className=' text-center pt-20'>
-            <h1 className=' text-dark-green md:text-[60px] text-[40px] font-[500] hero-phrase'>Emotional <span className=' italic'>well-being</span> through  </h1>
+            <h1 className=' text-dark-green md:text-[60px] text-[40px] font-[500] hero-phrase'>Holistic <span className=' italic'>well-being</span> through  </h1>
             <h1 className=' text-dark-green md:text-[60px] text-[40px] font-[500] hero-phrase md:-mt-7'>expert guidance & transformative coaching</h1>
 
             <p className=' mt-5'>We empower individuals and organizations with tailored coaching to foster emotional well-being & lasting transformation.</p>

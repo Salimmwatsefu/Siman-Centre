@@ -32,7 +32,7 @@ const Footer = () => {
               Empowering individuals and organizations on their journey to personal and professional growth.
             </p>
             <div className="flex space-x-4 pt-4 ml-4 text-gray-600 ">
-              <a href="" className=" hover:text-gray-300  transition-colors">
+              <a href="https://www.facebook.com/61575718671180" className=" hover:text-gray-300  transition-colors">
                 <FiFacebook size={20} />
               </a>
               <a href="https://www.instagram.com/mysoulsuniverse/" className=" hover:text-gray-300  transition-colors">
