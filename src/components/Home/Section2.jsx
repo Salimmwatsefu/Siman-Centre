@@ -59,7 +59,7 @@ function Section2() {
         transition={{ type: 'spring', stiffness: 70, damping: 25, delay: 0.4 }}
       />
 
-      <div className="md:mx-16 ml-5 relative z-10">
+      <div className="md:mx-16 md:ml-5 mx-2 relative z-10">
         <div className="md:pt-28 pt-16 pb-10">
           <motion.h1
             className="px-4 py-2 border-2 border-terracotta w-fit text-terracotta rounded-3xl uppercase text-sm"

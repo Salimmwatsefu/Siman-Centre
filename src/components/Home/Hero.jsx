@@ -1,4 +1,4 @@
-import React from 'react'
+ import React from 'react'
 import hero2 from '../../assets/siman-hero-bg.png'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
@@ -6,14 +6,14 @@ import { motion } from 'framer-motion'
 function Hero() {
   return (
     <section
-      className="relative w-full h-screen bg-contain bg-right bg-no-repeat bg-[#0d3a49]"
+      className="relative   w-full h-screen md:bg-contain bg-cover md:bg-right bg-center bg-no-repeat bg-[#0d3a49]"
       style={{ backgroundImage: `url(${hero2})` }}
     >
       <div className="relative container mx-auto px-6 md:px-12 items-center gap-16 h-full pt-[120px]">
         
         {/* Left Content */}
         <motion.div 
-          className="flex-1 text-center md:text-left max-w-2xl"
+          className="flex-1  md:text-left max-w-2xl"
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}

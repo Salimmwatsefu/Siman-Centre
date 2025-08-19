@@ -29,7 +29,7 @@ const AboutSection1 = () => {
       transition={{ type: 'spring', stiffness: 70, damping: 25, delay: 0.2 }}
     >
       <motion.h1
-        className="pt-20 ml-28 text-5xl text-terracotta"
+        className="pt-20 md:ml-28 ml-4 md:text-5xl text-4xl text-terracotta"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 20 }}
         transition={{ type: 'spring', stiffness: 70, damping: 25, delay: 0.3 }}

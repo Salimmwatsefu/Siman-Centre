@@ -28,7 +28,7 @@ function Section1() {
       transition={{ type: 'spring', stiffness: 70, damping: 25 }}
     >
       {/* Left Column: Text */}
-      <div className="md:w-[550px] flex flex-col justify-center mx-5 px-7">
+      <div className="md:w-[550px] flex flex-col justify-center mx-5 px-7 mb-10">
         <motion.h1
           className="text-deep-green text-3xl font-bold mb-6"
           initial={{ opacity: 0, y: 20 }}
@@ -95,7 +95,7 @@ function Section1() {
         <img
           src={section1}
           alt="Welcome"
-          className="w-full h-full object-contain rounded-l-2xl"
+          className="md:w-full h-full object-contain md:rounded-l-2xl mx-2"
         />
       </motion.div>
     </motion.div>

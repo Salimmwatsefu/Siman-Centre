@@ -32,11 +32,11 @@ function HeroAbout() {
   let letterIndex = 0;
 
   return (
-    <div ref={ref} className="grid grid-cols-2 h-[95vh]">
+    <div ref={ref} className="grid grid-cols-2 md:h-[95vh] h-[50vh]">
       {/* Left Column: Text */}
-      <div className="bg-deep-blue flex items-center">
+      <div className="bg-deep-blue flex items-center  ">
         <motion.p
-          className="mt-[45%] px-10 text-6xl font-bold text-sage"
+          className="md:mt-[45%] px-10 md:text-6xl text-3xl font-bold text-sage"
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: inView ? 1 : 0, scale: inView ? 1 : 0.95 }}
           transition={{ type: 'spring', stiffness: 70, damping: 25, delay: 0.3 }}
@@ -74,7 +74,7 @@ function HeroAbout() {
         <img
           src={aboutHero}
           alt="Siman Wellness Centre"
-          className="h-[95vh] object-cover w-full"
+          className="md:h-[95vh] h-[50vh] object-cover w-full"
         />
       </div>
     </div>
