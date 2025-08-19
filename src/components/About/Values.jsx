@@ -56,8 +56,8 @@ const Values = () => {
   ];
 
   return (
-    <Section id="values" bgColor="bg-dark-green" className=' pb-20'>
-      <h1 className=' text-goldenrod text-center font-medium uppercase pt-20'>Core Values</h1>
+    <Section id="values" bgColor="bg-deep-green" className=' pb-20'>
+      <h1 className=' text-terracotta text-center font-medium uppercase pt-20'>Core Values</h1>
       <h2 className=' text-center pt-5 text-4xl text-gray-200 font-semibold'>The Principles That Guide Us</h2>
 
       <motion.div
@@ -80,7 +80,7 @@ const Values = () => {
             className="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-white hover:bg-white/20 transition-colors"
           >
             <div className="flex items-center mb-4">
-              <div className="p-2 bg-goldenrod rounded-full mr-3">
+              <div className="p-2 bg-sage rounded-full mr-3">
                 <span className="text-dark-green">
                   {value.icon}
                 </span>
@@ -100,7 +100,7 @@ const Values = () => {
           transition={{ duration: 0.8, delay: 0.5 }}
           className="inline-block"
         >
-          <div className="h-24 w-24 rounded-full bg-forest-green backdrop-blur-sm p-6 mx-auto">
+          <div className="h-24 w-24 rounded-full bg-sage backdrop-blur-sm p-6 mx-auto">
             <div className="h-full w-full rounded-full border-2 border-dashed border-goldenrod animate-spin-slow"></div>
           </div>
         </motion.div>
@@ -110,7 +110,7 @@ const Values = () => {
           transition={{ duration: 0.8, delay: 0.8 }}
           className="text-white/70 mt-6 max-w-2xl mx-auto"
         >
-          Our values form the foundation of everything we do at My Soul's Universe, guiding our approach to empowering individuals and organizations on their growth journey.
+          Our values form the foundation of everything we do at Siman Wellness Clinic, guiding our approach to empowering individuals and organizations on their growth journey.
         </motion.p>
       </div>
     </Section>

@@ -1,6 +1,6 @@
 import React from 'react';
 // Import icons from react-icons
-import { FaArrowRight, FaUsers, FaChalkboardTeacher, FaHandsHelping, FaBuilding } from 'react-icons/fa';
+import { FaArrowRight, FaHeartbeat, FaUserMd, FaLeaf, FaStethoscope } from 'react-icons/fa';
 import { IoRocketOutline } from "react-icons/io5"; // Example using an ionicon for the main header
 import { Link } from 'react-router-dom';
 
@@ -9,24 +9,24 @@ import { Link } from 'react-router-dom';
 // Define your services data
 const services = [
   {
-    title: 'Professional Training & Development',
-    description: 'Skill-building workshops and leadership training.',
-    icon: <FaChalkboardTeacher className="w-full h-full" /> // Example Training icon
+    title: 'Primary Care & Preventive Medicine',
+    description: 'Comprehensive health screenings, annual physicals, and preventive care to maintain optimal health.',
+    icon: <FaUserMd className="w-full h-full" />
   },
   {
-    title: 'Personalized Coaching & Mentoring',
-    description: 'One-on-one and group coaching for individuals and teams.',
-    icon: <FaHandsHelping className="w-full h-full" /> // Example Coaching/Helping icon
+    title: 'Integrative Wellness Therapies',
+    description: 'Combining traditional medicine with complementary therapies like acupuncture, massage, and nutrition counseling.',
+    icon: <FaLeaf className="w-full h-full" />
   },
   {
-    title: 'Psychosocial Support & Well-being Programs',
-    description: 'Mental wellness and emotional resilience strategies.',
-    icon: <FaUsers className="w-full h-full" /> // Example Users/Community icon
+    title: 'Chronic Disease Management',
+    description: 'Personalized treatment plans for diabetes, hypertension, heart disease, and other chronic conditions.',
+    icon: <FaHeartbeat className="w-full h-full" />
   },
   {
-    title: 'Organizational Growth Solutions',
-    description: 'Tailored programs to enhance workplace culture and effectiveness.',
-    icon: <FaBuilding className="w-full h-full" /> // Example Building/Org icon
+    title: 'Mental Health & Wellness',
+    description: 'Stress management, anxiety treatment, depression care, and mindfulness-based wellness programs.',
+    icon: <FaStethoscope className="w-full h-full" />
   },
 ];
 
@@ -39,16 +39,16 @@ const ServicesSection = () => {
         {/* Header Section */}
         <div className="text-center mb-12">
           {/* Main Header Icon: Background --color-goldenrod, Icon color --color-cream */}
-          <div className="mx-auto mb-6 h-12 w-12 rounded-full bg-pale-green flex items-center justify-center text-dark-green text-2xl">
+          <div className="mx-auto mb-6 h-12 w-12 rounded-full bg-sage flex items-center justify-center text-dark-green text-2xl">
              <IoRocketOutline /> {/* Example Main Icon */}
           </div>
           {/* Title color inherits from section text color: --color-dark-green */}
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-deep-green">
             Our Services
           </h2>
           {/* Description color: --color-forest-green */}
-          <p className="text-forest-green max-w-2xl mx-auto">
-            We offer a range of services designed to support growth and transformation for individuals and organizations.
+          <p className="text-gray-500 max-w-2xl mx-auto">
+            We offer comprehensive healthcare services that integrate traditional medicine with holistic wellness approaches for optimal health and vitality.
           </p>
         </div>
 
@@ -58,15 +58,15 @@ const ServicesSection = () => {
             <div
               key={index}
               // Card background: --color-cream, Border: --color-pale-green
-              className="bg-dark-green rounded-lg p-8 shadow-lg border border-pale-green flex flex-col"
+              className="bg-deep-green rounded-lg p-8 shadow-lg border border-sage flex flex-col"
             >
               {/* Service Card Icon color: --color-goldenrod */}
-              <div className="mb-6 h-10 w-10 text-bg">
+              <div className="mb-6 h-10 w-10 text-sage">
                  {service.icon} {/* Use the icon defined in the service object */}
               </div>
 
               {/* Title color: --color-dark-green */}
-              <h3 className="text-xl font-semibold text-bg/70 mb-3">
+              <h3 className="text-xl font-semibold text-sage mb-3">
                 {service.title}
               </h3>
               {/* Description color: --color-forest-green */}
@@ -76,7 +76,7 @@ const ServicesSection = () => {
 
               {/* Get Started Button text color: --color-goldenrod, Hover color: --color-burnt-orange */}
               <Link to='/contacts'>
-              <button className="inline-flex items-center text-goldenrod hover:text-burnt-orange font-semibold">
+              <button className="inline-flex items-center text-terracotta hover:text-burnt-orange font-semibold">
                 Get Started
                 <FaArrowRight className="ml-2 h-4 w-4" /> {/* Use FaArrowRight icon */}
               </button>

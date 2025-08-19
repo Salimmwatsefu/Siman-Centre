@@ -1,50 +1,98 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import MobileNav from './MobileNav'; 
-import logo from '../../assets/newLogoFull.png'; 
+import { motion } from 'framer-motion';
+import MobileNav from './MobileNav';
+import logo from '../../assets/siman_wellness_logo.png';
 
 const Navbar = () => {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <nav className="bg-white shadow-md border-b border-dark-green/20">
-      <div className="container mx-auto px-4 md:px-6 flex justify-between items-center py-4">
-        {/* Logo and Brand */}
-        <div className="flex items-center">
-          <Link to="/">
-            <img src={logo} alt="My Soul’s Universe Logo" className="h-16 mr-2" />
-          </Link>
-          <span className="md:text-xl text-lg font-bold text-gray-800">MySoulsUniverse</span>
-        </div>
+    <motion.nav
+      initial={{
+        opacity: 0,
+        top: 12,
+        width: '90%',
+        maxWidth: '80rem',
+        borderRadius: 9999,
+        padding: '6px 24px',
+      }}
+      animate={{
+        opacity: 1,
+        top: scrolled ? 0 : 12,
+        width: scrolled ? '100%' : '90%',
+        maxWidth: scrolled ? '100%' : '80rem',
+        borderRadius: scrolled ? 0 : 9999,
+        padding: scrolled ? '12px 24px' : '6px 24px',
+      }}
+      transition={{
+        opacity: { delay: 0.5, duration: 0.3 },
+        default: scrolled ? { type: 'spring', stiffness: 70, damping: 25 } : { duration: 0 },
+      }}
+      className={`fixed left-1/2 z-50 transform -translate-x-1/2 ${
+        scrolled ? 'bg-sage' : 'bg-sinse/90'
+      } backdrop-blur-lg shadow-lg flex justify-between items-center transition-colors w-[90%] max-w-[80rem] rounded-[9999px] py-[6px] px-6 border border-sage/20`}
+    >
+      {/* Logo and Brand */}
+      <motion.div
+        className="flex items-center space-x-2"
+        animate={{ scale: scrolled ? 0.95 : 1 }}
+        transition={scrolled ? { type: 'spring', stiffness: 70, damping: 25 } : { duration: 0 }}
+      >
+        <Link to="/">
+          <img src={logo} alt="Siman Wellness Logo" className="h-8 w-auto" />
+        </Link>
+        <span className={`italic ${
+          scrolled ? 'text-deep-blue' : 'text-sage'
+        } text-lg md:text-xl transition-colors duration-300`}>Siman Wellness</span>
+      </motion.div>
 
-        {/* Desktop Links and Mobile Nav */}
-        <div className="flex items-center">
-          {/* Desktop Links (Hidden on Mobile) */}
-          <div className="hidden md:flex items-center space-x-6 mr-14">
-            <Link to="/" className="text-dark-green hover:text-gold transition-colors">
-              Home
-            </Link>
-            <Link to="/about" className="text-dark-green hover:text-gold transition-colors">
-              About
-            </Link>
-            <Link to="/services" className="text-dark-green hover:text-gold transition-colors">
-              Services
-            </Link>
-            <Link to="/contacts" className="text-dark-green hover:text-gold transition-colors">
-              Contacts
-            </Link>
-          </div>
-
-          {/* Get Started Button (Desktop) */}
-          <Link to="/contacts" className="hidden md:block">
-            <button className="bg-sage-green hover:bg-dark-green text-dark-green hover:text-white font-semibold py-2 px-4 rounded cursor-pointer transition-colors">
-              Get Started
-            </button>
-          </Link>
-
-          {/* Mobile Nav (Visible on Mobile) */}
-          <MobileNav />
-        </div>
+      {/* Desktop Links */}
+      <div className="hidden md:flex items-center space-x-6">
+        <Link to="/" className={`${
+          scrolled ? 'text-deep-blue' : 'text-sage'
+        } hover:text-mist-blue transition-colors duration-300`}>Home</Link>
+        <Link to="/about" className={`${
+          scrolled ? 'text-deep-blue' : 'text-sage'
+        } hover:text-mist-blue transition-colors duration-300`}>About</Link>
+        <Link to="/services" className={`${
+          scrolled ? 'text-deep-blue' : 'text-sage'
+        } hover:text-mist-blue transition-colors duration-300`}>Services</Link>
+        <Link to="/contacts" className={`${
+          scrolled ? 'text-deep-blue' : 'text-sage'
+        } hover:text-mist-blue transition-colors duration-300`}>Contacts</Link>
       </div>
-    </nav>
+
+      {/* CTA Button */}
+      <div className="hidden md:block">
+        <Link to="/contacts">
+          <motion.button
+            className="bg-deep-green hover:bg-pale-mint text-terracotta font-normal text-sm rounded-full shadow-md transition-colors duration-300"
+            animate={{
+              scale: scrolled ? 0.95 : 1,
+              padding: scrolled ? '6px 12px' : '8px 18px',
+              fontSize: scrolled ? '0.8rem' : '0.9rem',
+            }}
+            transition={scrolled ? { type: 'spring', stiffness: 70, damping: 25 } : { duration: 0 }}
+            whileHover={{ scale: 1.05, y: -2 }}
+            whileTap={{ scale: 0.97 }}
+          >
+            Get In Touch
+          </motion.button>
+        </Link>
+      </div>
+
+      {/* Mobile Nav */}
+      <MobileNav />
+    </motion.nav>
   );
 };
 

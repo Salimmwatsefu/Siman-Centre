@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 const BookNowSection = () => {
   return (
-    <section className="bg-bg text-dark-green py-16 px-4 sm:px-6 lg:px-8">
+    <section className="bg-sage text-deep-green py-16 px-4 sm:px-6 lg:px-8">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -15,23 +15,23 @@ const BookNowSection = () => {
         className="container mx-auto text-center"
       >
         {/* Header Icon */}
-        <div className="mx-auto mb-6 h-12 w-12 rounded-full bg-pale-green flex items-center justify-center text-dark-green text-2xl">
+        <div className="mx-auto mb-6 h-12 w-12 rounded-full bg-deep-green flex items-center justify-center text-white/70 text-2xl">
           <IoRocketOutline />
         </div>
         {/* Title */}
         <h2 className="text-3xl md:text-4xl font-bold mb-4">
-          Start Your Journey Today
+          Schedule Your Consultation Today
         </h2>
         {/* Description */}
         <p className="text-forest-green max-w-2xl mx-auto mb-8">
-          Take the first step toward growth, transformation, and success. Book a session with our expert team to unlock your potential or elevate your organization.
+          Take the first step toward optimal health and wellness. Schedule a consultation with our experienced healthcare team to begin your personalized wellness journey.
         </p>
         {/* Booking Button */}
         <Link
           to="/contacts"
-          className="inline-flex items-center bg-dark-green text-white py-3 px-6 rounded-md font-semibold hover:bg-burnt-orange transition-colors"
+          className="inline-flex items-center bg-deep-green text-white/70 py-3 px-6 rounded-md font-semibold hover:bg-burnt-orange transition-colors"
         >
-          Book a Session
+          Schedule Consultation
           <FaArrowRight className="ml-2 h-4 w-4" />
         </Link>
       </motion.div>

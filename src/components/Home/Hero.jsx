@@ -1,37 +1,81 @@
 import React from 'react'
-import hero2 from '../../assets/hero2.png'
+import hero2 from '../../assets/siman-hero-bg.png'
 import { Link } from 'react-router-dom'
+import { motion } from 'framer-motion'
 
 function Hero() {
   return (
-    <div className=' bg-bg pb-10'>
-        <div className=' text-center pt-20'>
-            <h1 className=' text-dark-green md:text-[60px] text-[40px] font-[500] hero-phrase'>Holistic <span className=' italic'>well-being</span> through  </h1>
-            <h1 className=' text-dark-green md:text-[60px] text-[40px] font-[500] hero-phrase md:-mt-7'>expert guidance & transformative coaching</h1>
+    <section
+      className="relative w-full h-screen bg-contain bg-right bg-no-repeat bg-[#0d3a49]"
+      style={{ backgroundImage: `url(${hero2})` }}
+    >
+      <div className="relative container mx-auto px-6 md:px-12 items-center gap-16 h-full pt-[120px]">
+        
+        {/* Left Content */}
+        <motion.div 
+          className="flex-1 text-center md:text-left max-w-2xl"
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+        >
+          <motion.h1 
+            className="text-sage font-bold md:text-7xl text-4xl leading-tight"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2, duration: 0.7, ease: "easeOut" }}
+          >
+            Comprehensive <span className="italic text-sage">wellness</span> care
+          </motion.h1>
 
-            <p className=' mt-5'>We empower individuals and organizations with tailored coaching to foster emotional well-being & lasting transformation.</p>
-        </div>
+          <motion.h2 
+            className="text-deep-green md:text-3xl text-2xl font-medium mt-4"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4, duration: 0.7, ease: "easeOut" }}
+          >
+            Minnesota's trusted mental clinic
+          </motion.h2>
 
-        <div className=' flex justify-center'>
-            <Link to='/about'>
-            <button className=' bg-dark-green px-5 py-4 mt-10 rounded-lg text-goldenrod flex gap-2 cursor-pointer'>
-                Learn More
+          <motion.p 
+            className="mt-6 text-mist-blue text-base md:text-lg max-w-md leading-relaxed mx-auto md:mx-0"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.6, duration: 0.7, ease: "easeOut" }}
+          >
+            We provide compassionate mental health services, blending therapy and counseling
+            to help individuals and families across Minnesota 
+            find balance, resilience, and healing.
+          </motion.p>
 
-                <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.75 4C10.75 7.13537 12.9567 9.83761 16.0288 10.4642L19.9559 11.2651C20.3046 11.3363 20.5553 11.6427 20.556 11.9985C20.5567 12.3544 20.3072 12.6618 19.9588 12.7343L16.2209 13.512C13.1471 14.1516 10.9439 16.8604 10.9439 20H9.44394C9.44394 16.8801 11.218 14.1071 13.8966 12.75H3C2.58579 12.75 2.25 12.4142 2.25 12C2.25 11.5858 2.58579 11.25 3 11.25H13.7392C11.0416 9.90807 9.25 7.12986 9.25 4H10.75Z" fill="#D7A24E"></path>
-            </svg>
-            </button>
+          {/* CTA Buttons */}
+          <motion.div 
+            className="mt-10 flex flex-col sm:flex-row gap-5 justify-center md:justify-start"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.8, duration: 0.7, ease: "easeOut" }}
+          >
+            <Link to="/services">
+              <motion.button 
+                whileHover={{ scale: 1.05, y: -3 }}
+                whileTap={{ scale: 0.97 }}
+                className="bg-terracotta hover:bg-sand text-white px-8 py-3 rounded-full shadow-lg transition-colors"
+              >
+                Our Services
+              </motion.button>
             </Link>
-        </div>
-
-        <div className=' flex justify-center mt-20 '>
-            <img 
-            src={hero2}
-            className=' md:w-[750px] w-[400px] rounded-[200px]'
-            alt='hero'
-            />
-        </div>
-    </div>
+            <Link to="/about">
+              <motion.button 
+                whileHover={{ scale: 1.05, y: -3 }}
+                whileTap={{ scale: 0.97 }}
+                className="bg-white border border-sage text-deep-green hover:bg-sage hover:text-white px-8 py-3 rounded-full shadow-md transition-colors"
+              >
+                Learn More
+              </motion.button>
+            </Link>
+          </motion.div>
+        </motion.div>
+      </div>
+    </section>
   )
 }
 

@@ -14,7 +14,7 @@ function Home() {
         <Section1 />
         <Section2 />
         <ClientsSection />
-        <CTA />
+        
         
     </div>
   )

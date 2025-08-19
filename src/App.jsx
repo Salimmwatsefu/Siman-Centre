@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import navLogo from './assets/logo1.png'
+
 import './App.css'
 import Navbar from './components/Home/Navbar'
 import Home from './components/Home/Home'
@@ -10,13 +10,14 @@ import Contact from './components/Contacts/Contact'
 import Services from './components/Services/Services'
 import ServicesHome from './components/Services/ServicesHome'
 import LinkAnnouncement from './components/Home/LinkAnnouncement'
+import CTA from './components/Home/CTA'
 
 function App() {
  
 
   return (
     <div>
-      <LinkAnnouncement />
+
 
       <Navbar />
       
@@ -27,6 +28,8 @@ function App() {
         <Route path='/contacts' element={ <Contact /> } />
         <Route path='/services' element={ <ServicesHome /> } />
       </Routes>
+
+      <CTA />
 
       <Footer />
 

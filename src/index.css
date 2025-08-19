@@ -3,18 +3,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 @theme {
-  --color-bg: #fbf7f0;
-  --color-cream: #fffefc;
+  --color-bg: #F9FAFB;         /* clean, airy background */
+  --color-cream: #FFFFFF;      /* pure white for sections/cards */
 
-  --color-dark-green: #184D3A;
-  --color-forest-green: #2F6B3E;
-  --color-olive-green: #798D3B;
-  --color-sage-green: #A8A367;
-  --color-goldenrod: #D7A24E;
-  --color-burnt-orange: #B16A2C;
-  --color-rust-brown: #8F4B15;
-  --color-pale-green: #E2EDE3;
+  --color-deep-green: #2F4858; /* trust, stability, grounded */
+  --color-sage: #A8C4B3;       /* calm, restorative accent */
+  --color-mist-blue: #9FB7CF;  /* soft mental clarity */
+  --color-lavender-gray: #C8CADC; /* gentle calming neutral */
+
+  --color-sand: #EBD9C4;       /* warm, comforting undertone */
+  --color-terracotta: #af906d; /* subtle accent, not too harsh */
+
+  --color-pale-mint: #F3F8F6; 
+  --color-deep-blue: #0d3a49 /* background wash for sections */
 }
+
 
 
 body {
